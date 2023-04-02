@@ -9,7 +9,7 @@
 
 body {
     width: 100vw;
-
+    overflow-x: hidden;
 }
 
 header {
@@ -98,11 +98,6 @@ main {
 
 }
 
-.container {
-    width: 85%;
-    height: 100%;
-    margin: 0 auto;
-}
 
 .hero_items {
     color: #fff;
@@ -145,9 +140,6 @@ main {
 
 .dropdown {
     margin-top: 10px;
-}
-
-.dropdown {
     position: relative;
     transition: 0.5s;
 }
@@ -285,6 +277,7 @@ ul li i {
     width: 100%;
     height: 50vh;
     text-align: center;
+    margin-bottom: 11%;
 }
 
 #why_us .col-8 {
@@ -296,25 +289,38 @@ ul li i {
     background-color: #5fcf80;
     border-radius: 10px;
     color: white;
+    padding: 7% 15px;
 }
 
 .why_choose h3 {
     font-size: 35px;
     font-weight: 500;
+
 }
 
-.col-8 .col-4 {
-    width: 100;
+.row_card {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin-left: 20px;
+
+
+}
+
+.row_card .col-4 {
+    margin-left: 20px;
+    padding: 7% 15px;
     text-align: center;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(229, 226, 226);
 }
 
-.col-8 .col-4 h3 {
+.row_card.col-4 h3 {
     font-weight: 600;
     color: rgb(67, 67, 67);
+    margin-bottom: 10px;
 }
 
-.col-8 .col-4 p {
+.row_card .col-4 p {
     font-size: 15px;
     color: #848484;
 
@@ -329,4 +335,265 @@ ul li i {
     padding: 20px;
     font-size: 25px;
     margin-bottom: 30px;
+}
+
+.learn_more_btn {
+    margin-top: 20px;
+    padding: 7px;
+    width: 160px;
+    color: #fff;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.learn_more_btn .fa {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.learn_more_btn:hover {
+    background-color: white;
+    color: #5fcf80;
+}
+
+.features_section {
+    width: 100%;
+    height: 50vh;
+}
+
+.features_section .col-3 {
+    width: 22%;
+    margin: 1% 1.5%;
+    height: 20%;
+    display: flex;
+
+    align-items: center;
+    border: 1px solid rgb(223, 221, 221);
+
+    transition: 0.5s;
+
+}
+
+.features_section .col-3 a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #393838;
+}
+
+.features_section .col-3 i {
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+.features_section .col-3:hover {
+    border: 1px solid #5fcf80;
+    color: #5fcf80;
+}
+
+.courses_section {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 10%;
+}
+
+
+.row_courses {
+    display: flex;
+    width: 100%;
+
+
+}
+
+.section-title {
+    padding-bottom: 40px;
+
+}
+
+.section-title h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1px;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+}
+
+.section-title p {
+    font-size: 35px;
+    font-weight: 700;
+    color: #37423b;
+}
+
+.row_courses .col-4 {
+    width: 31%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.col-4 img {
+    width: 100%;
+    height: 60%;
+}
+
+.course_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.course_content p {
+    background-color: #5fcf80;
+    color: white;
+    padding: 3px 5px;
+}
+
+.course_content span {
+    font-weight: 500;
+    font-size: 19px;
+    color: #37423b;
+}
+
+.course_items {
+    padding: 5px 10px;
+}
+
+.course_items a {
+    color: #37423b;
+    font-weight: 500;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.course_items p {
+    font-size: 14px;
+    color: #848484;
+}
+
+hr {
+    color: #f6f7f6;
+    margin: 20px 10px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.box_antonio {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://bootstrapmade.com/demo/templates/Mentor/assets/img/trainers/trainer-1.jpg);
+    background-size: cover;
+}
+
+.info p {
+    color: #5a6c60;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.info span:first-of-type {
+    margin-left: 160px;
+    margin-right: 15px;
+}
+
+.info span {
+    color: #5a6c60;
+    font-size: 17px;
+}
+
+.info i {
+    margin-right: 5px;
+}
+
+.box_lana {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://bootstrapmade.com/demo/templates/Mentor/assets/img/trainers/trainer-2.jpg);
+    background-size: cover;
+}
+
+.box_brandon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://bootstrapmade.com/demo/templates/Mentor/assets/img/trainers/trainer-3.jpg);
+    background-size: cover;
+}
+
+.course_items a:hover {
+    color: #5fcf80;
+}
+
+.trainers_section {
+    width: 100%;
+    height: 80vh;
+}
+
+.trainers_section .col-4 {
+    width: 31%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.row_trainers {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.row_trainers .col-4 img {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.trainers_content {
+    text-align: center;
+    padding: 10px 10px;
+
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 23px;
+}
+
+.social ul li a i {
+    color: #aaaaaa;
+
+}
+
+.trainers_content h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.trainers_content p {
+    font-style: italic;
+    font-size: 13px;
+    color: #5a6c60;
+    font-weight: 500;
+}
+
+.trainers_content span {
+    font-style: italic;
+    font-size: 14px;
+    color: #aaaaaa;
+    
 }
